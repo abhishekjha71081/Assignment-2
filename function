@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+//using function to find maximum number
+int max_of_four(int a,int b,int c,int d);
+
+int main(){
+    int a,b,c,d;
+     scanf("%d %d %d %d",&a ,&b ,&c ,&d);
+    int answer= max_of_four(a ,b ,c ,d);
+    printf("%d",answer);
+    return 0;
+    
+}
+int max_of_four(int a,int b,int c,int d)
+{
+    int f;
+    if(a>b&&a>c&&a>d)
+    {
+        f=a;
+    }
+    else if(b>a&&b>c&&b>d){
+        f=b;
+    }
+    else if(c>a&&c>b&&c>d){
+        f=c;
+    }
+    else{
+        f=d;
+    }
+return f;}
